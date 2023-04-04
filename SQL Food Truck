@@ -1,0 +1,37 @@
+/** Food Truck:
+Coke $2 
+Sprite $2 
+Fanta $2
+Dr. Pepper $2
+Pizza $4
+Fries $4
+Cheesburger $5
+Chicken Nuggets $5
+Mozzerella Sticks $5
+Mashed Potatoes $3
+Rice $3
+Beans $3
+Cake $5
+Cookies $1 
+Ice Cream $5 
+**/
+CREATE TABLE Food_truck (id INTEGER PRIMARY KEY, name TEXT, price INTEGER);
+INSERT INTO food_truck VALUES (1, "Coke", 2);
+INSERT INTO food_truck VALUES (2, "Sprite", 2);
+INSERT INTO food_truck VALUES (3, "Fanta", 2);
+INSERT INTO food_truck VALUES (4, "Dr. Pepper", 2);
+INSERT INTO food_truck VALUES (5, "Pizza", 4);
+INSERT INTO food_truck VALUES (6, "Fries", 4);
+INSERT INTO food_truck VALUES (7, "Cheeseburger", 5);
+INSERT INTO food_truck VALUES (8, " Chicken Nuggets", 5);
+INSERT INTO food_truck VALUES (9, "Mozzerella Sticks", 5);
+INSERT INTO food_truck VALUES (10, " Mashed Potatoes", 3);
+INSERT INTO food_truck VALUES (11, "Rice", 3);
+INSERT INTO food_truck VALUES (12, "Beans", 3);
+INSERT INTO food_truck VALUES (13, "Cake", 5);
+INSERT INTO food_truck VALUES (14, "Cookies", 1);
+INSERT INTO food_truck VALUES (15, "Ice Cream", 5);
+SELECT * FROM food_truck ORDER BY price; 
+SELECT AVG(price) FROM food_truck; 
+SELECT * FROM food_truck WHERE price>3;
+
